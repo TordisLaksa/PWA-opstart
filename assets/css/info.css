@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #000016;
+}
+
+body header {
+  height: 10vw;
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2vw 0;
+  margin-bottom: 2.5vw;
+}
+
+body header h1 {
+  font-size: 6.5vw;
+}
+
+body article {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+body article h2 {
+  margin-left: 4vw;
+  font-size: 7vw;
+  padding: 1vw;
+}
+
+body article p {
+  margin: 5vw;
+}
+
+body footer {
+  margin-top: 14vw;
+  height: 10vw;
+  background-color: white;
+}
+
+body footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer nav a {
+  padding: 1.5vw;
+  font-size: 6vw;
+  color: black;
+}
+
+body footer nav a:hover {
+  color: #007db8;
+}
+/*# sourceMappingURL=info.css.map */

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  inset: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #000016;
+}
+
+body header {
+  height: 10vw;
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2vw 0;
+}
+
+body header h1 {
+  font-size: 6.5vw;
+}
+
+body figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body figure img {
+  margin: 17vw 0;
+  width: 90%;
+}
+
+body footer {
+  margin-top: 3.5vw;
+  height: 10vw;
+  background-color: white;
+}
+
+body footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer nav a {
+  padding: 1.5vw;
+  font-size: 6vw;
+  color: black;
+}
+
+body footer nav a:hover {
+  color: #007db8;
+}
+/*# sourceMappingURL=main.css.map */
