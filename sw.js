@@ -1,7 +1,6 @@
 let CACHE_NAME = "my-site-cache";
 
 let urlsToCache = [
-    './',
     './assets/css/main.css',
     './assets/css/info.css',
     './assets/images/silly-your-dog-drawings.jpg',
