@@ -12,6 +12,7 @@
 body {
   width: 100%;
   background-color: #000016;
+  min-height: 100vh;
 }
 
 body header {
@@ -42,22 +43,21 @@ body figure {
 
 body figure img {
   margin: 17vw 0;
-  width: 90%;
+  width: 90vw;
 }
 
 body footer {
-  margin-top: 4.5vw;
-  height: 10vw;
-  background-color: white;
-}
-
-body footer nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: absolute;
+  height: 11vw;
+  width: 100%;
+  bottom: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
 }
 
 body footer nav a {
