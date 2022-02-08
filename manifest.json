@@ -1,0 +1,55 @@
+{
+    "name": "Hent en info om en hund",
+    "short_name": "Hent en hund",
+    "description": "Hent en hund... hender info om en hund",
+    "start_url": "./index.html",
+    "scope": "./",
+    "background_color": "#000016",
+    "theme_color": "#000016",
+    "display": "fullscreen",
+
+    "icons":[
+        {
+            "src": "./assets/images/logo192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/images/logo256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/images/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+
+    "shortcuts": [
+        {
+            "name": "info",
+            "short_name": "info",
+            "description": "info om min hund",
+            "url": "./info.html",
+            "icons":[
+                {
+                    "src": "./assets/images/logo192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                },
+                {
+                    "src": "./assets/images/logo256.png",
+                    "sizes": "256x256",
+                    "type": "image/png"
+                },
+                {
+                    "src": "./assets/images/logo512.png",
+                    "sizes": "512x512",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ]
+    
+}
