@@ -7,52 +7,52 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-    width: 100%;
-    background-color: #000016;
-    
+    background-color: rgb(0, 0, 22);
     
     header{
-        height: 10vw;
-        width: 100%;
         background-color: white;
-        display: flex;
-        justify-content: center;
-        padding: 2vw 0;
-        margin-bottom: 2.5vw;
         h1{
             font-size: 6.5vw;
+            text-align: center;
         }
     }
-   article{
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 90%;
-    h2{
-        margin-left: 4vw;
-        font-size: 7vw;
-        padding: 1vw;
-    }
-    p{
-        margin: 5vw;
-    }
-   }
-    footer{
-        margin-top: 14vw;
-        height: 10vw;
-        background-color: white;
-        nav{
+    main{
+
+        article{
+            color: white;
             display: flex;
             justify-content: center;
-            a{
-                padding: 1.5vw;
-                font-size: 6vw;
-                color: black;
-                &:hover{
-                    color: rgb(0, 125, 184);
-                }
+            flex-direction: column;
+            width: 90%;
+            h2{
+                margin-left: 4vw;
+                font-size: 7vw;
+                padding: 1vw;
+            }
+            p{
+                margin: 5vw;
+            }
+        }
+        img{
+            margin-left: 50vw;
+        }
+   }
+   footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    nav{
+        display: flex;
+        justify-content: center;
+        a{
+            padding: 1.5vw;
+            font-size: 6vw;
+            color: black;
+            &:hover{
+                color: rgb(250, 0, 175);
             }
         }
     }
+}
 }

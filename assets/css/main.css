@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  inset: 0;
   text-decoration: none;
   list-style: none;
   -webkit-box-sizing: border-box;
@@ -10,54 +9,65 @@
 }
 
 body {
-  width: 100%;
   background-color: #000016;
-  min-height: 100vh;
 }
 
 body header {
-  height: 10vw;
-  width: 100%;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2vw 0;
 }
 
 body header h1 {
   font-size: 6.5vw;
+  text-align: center;
 }
 
-body figure {
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+body main figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body figure img {
-  margin: 17vw 0;
+body main figure img {
   width: 90vw;
 }
 
 body footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}
+
+body footer nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  height: 11vw;
-  width: 100%;
-  bottom: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body footer nav a {
