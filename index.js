@@ -30,25 +30,29 @@ fetch('https://dog.ceo/api/breeds/image/random')
         const dogWrapper = document.querySelector('#dogWrapper');
         dogWrapper.prepend(dogImg);
 
-        const dogCaption = document.createElement('figcaption')
+        const figcaption = document.createElement('figcaption')
         const getDogBtn = document.createElement('button')
         getDogBtn.addEventListener('click', function () {
             location.reload()
         });
         getDogBtn.innerText = "Se en anden hund"
 
-        dogCaption.append(getDogBtn)
-        dogWrapper.append(dogCaption);
+        figcaption.append(getDogBtn)
+        dogWrapper.append(figcaption);
     })
     .catch((error) => {
         const wrapper = document.querySelector('#dogWrapper')
-        const figcaption = document.querySelector('#dogCaption')
+        const dogCaption = document.createElement('figcaption')
+
+
         let offlineText = document.createElement('h2')
         offlineText.innerText = "Årh nej!! Du er offline!"
-        figcaption.append(offlineText)
-        const offlineImg = document.createElement('img')
-        offlineImg.setAttribute('src', '/assets/images/Logo512.png')
 
-        wrapper.append(figcaption, offlineImg)
-        console.log(error);
+        dogCaption.append(offlineText)
+
+        const offlineImg = document.createElement('img')
+        offlineImg.setAttribute('src', './assets/images/Logo512.png')
+
+        wrapper.append(dogCaption, offlineImg)
+        // console.log(error);
     })
