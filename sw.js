@@ -11,7 +11,9 @@ let urlsToCache = [
     './info.html'
 ];
 
-//alle elementer til at kabe appen skal caches
+//alle elementer til at skabe appen skal caches
+
+//Cache, falling back to network
 
 self.addEventListener('install', function (event) {
     //preform install steps
@@ -25,7 +27,10 @@ self.addEventListener('install', function (event) {
     );
 });
 
-self.addEventListener('fetch', function (e) {
-    console.log('intercept req: ' + e.request.url);
-    //Caching srategi goes here
+self.addEventListener('fetch', function (event) {
+    event.respondWith(
+        caches.match(event.request).then(function (response) {
+            return response || fetch(event.request);
+        }),
+    );
 });

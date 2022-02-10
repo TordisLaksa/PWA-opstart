@@ -46,11 +46,17 @@ body main article h2 {
 
 body main article p {
   margin: 5vw;
+  font-size: 5vw;
 }
 
-body main img {
-  padding-left: 50vw;
-  padding-top: 5vw;
+body main a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+body main a img {
+  height: 20vh;
 }
 
 body footer {
