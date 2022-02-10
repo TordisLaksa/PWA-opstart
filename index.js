@@ -23,6 +23,7 @@ fetch('https://dog.ceo/api/breeds/image/random')
     })
     .then((data) => {
         let dogData = data;
+        const mainWrapper = document.querySelector('main');
 
         dogImg = document.createElement('img')
         dogImg.setAttribute('src', `${dogData.message}`)
@@ -30,15 +31,13 @@ fetch('https://dog.ceo/api/breeds/image/random')
         const dogWrapper = document.querySelector('#dogWrapper');
         dogWrapper.prepend(dogImg);
 
-        const figcaption = document.createElement('figcaption')
         const getDogBtn = document.createElement('button')
         getDogBtn.addEventListener('click', function () {
             location.reload()
         });
         getDogBtn.innerText = "Se en anden hund"
 
-        figcaption.append(getDogBtn)
-        dogWrapper.append(figcaption);
+        mainWrapper.prepend(getDogBtn);
     })
     .catch((error) => {
         const wrapper = document.querySelector('#dogWrapper')
